@@ -1,0 +1,26 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# HPC / SLURM logs
+*.log
+slurm-*.out
+
+# Training outputs and backups
+outputs_dino_*/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# System files
+.DS_Store
+EOF
